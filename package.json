@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "node_modules/.bin/live-server"
+    "start:dev": "webpack-dev-server",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "aframe": "^0.9.0",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "webpack": "^4.29.6"
   },
   "keywords": [
     "aframe",
@@ -19,5 +21,9 @@
     "aframe-scene",
     "webvr",
     "vr"
-  ]
+  ],
+  "devDependencies": {
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
 }
