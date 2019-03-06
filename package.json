@@ -2,13 +2,22 @@
   "name": "aframe-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node_modules/.bin/live-server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aframe": "^0.9.0"
-  }
+    "aframe": "^0.9.0",
+    "live-server": "^1.2.1"
+  },
+  "keywords": [
+    "aframe",
+    "aframe-example",
+    "aframe-boilerplate",
+    "aframe-scene",
+    "webvr",
+    "vr"
+  ]
 }
