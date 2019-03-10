@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <title>main</title>
-    <meta name="description" content="main">
-    <script src="dist/bundle.js"></script>
-  </head>
-  <body>
-    <a-scene>
-      <a-assets>
-        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" crossorigin="anonymous" alt="Enable js please">
-        <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossorigin="anonymous" alt="Enable js please">
-      </a-assets>
+    <title>Aframe demo</title>
+    <meta content="main" name="description">
+    <script src="/dist/bundle.js"></script>
+</head>
+<body>
+<a-scene>
+    <a-assets>
+        <img alt="Enable js please" crossorigin="anonymous" id="groundTexture"
+             src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+        <img alt="Enable js please" crossorigin="anonymous" id="skyTexture"
+             src="https://cdn.aframe.io/a-painter/images/sky.jpg">
+    </a-assets>
+    <!--STATSY-->
+    <!--<a-scene stats></a-scene>-->
 
-      <!-- Primitives. -->
-      <a-box position="-1 0.6 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.35 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.85 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 .1 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+    <a-box color="#4CC3D9" position="-1 0.5 -3" rotation="0 45 0"></a-box>
 
-      <!-- Background sky. -->
-      <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
+    <a-sphere color="#EF2D5E" position="0 1.25 -5" radius="1.25"></a-sphere>
 
-      <!-- Ground. -->
-      <a-circle src="#groundTexture" rotation="-90 0 0" radius="32"></a-circle>
+    <a-cylinder color="#FFC65D" height="1.5" position="1 0.75 -3" radius="0.5" show-text-on-hover="text: kocham nunu">
+    </a-cylinder>
+    <a-camera>
+        <a-cursor></a-cursor>
+    </a-camera>
+    <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
+    <a-circle radius="32" rotation="-90 0 0" src="#groundTexture"></a-circle>
 
-      <!--Tracked controls. -->
-      <a-entity hand-controls="hand: left"></a-entity>
-      <a-entity hand-controls="hand: right"></a-entity>
-    </a-scene>
-  </body>
+    <a-light type="ambient" color="#445451"></a-light>
+    <a-light type="point" intensity="2" position="2 4 4"></a-light>
+    <a-entity hand-controls="hand: left"></a-entity>
+    <a-entity hand-controls="hand: right"></a-entity>
+</a-scene>
+</body>
 </html>

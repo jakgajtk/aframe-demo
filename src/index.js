@@ -1,1 +1,3 @@
-import aframe from "aframe";
+import "aframe";
+
+import "./components/ShowTextOnHover";
