@@ -1,14 +1,15 @@
 {
   "name": "aframe-demo",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Simple demo project for aframe",
   "main": "index.html",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "node_modules/.bin/standard"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Jakub Gajtkowski",
+  "license": "MIT",
   "dependencies": {
     "aframe": "^0.9.0",
     "live-server": "^1.2.1",
@@ -23,6 +24,7 @@
     "vr"
   ],
   "devDependencies": {
+    "standard": "^12.0.1",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1"
   }
