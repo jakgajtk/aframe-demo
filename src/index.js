@@ -1,3 +1,3 @@
 import "aframe";
 
-import "./components/ShowTextOnHover";
+import "./components/ChangeColorOnHover";

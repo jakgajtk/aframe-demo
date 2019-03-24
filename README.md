@@ -1,7 +1,6 @@
-# main
+# Introduction
 
-main.
-
+Basic text project created to explore some of capabilities of webVR. 
 Built with [A-Frame](https://aframe.io).
 
 ## Setup

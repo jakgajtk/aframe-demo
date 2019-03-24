@@ -1,4 +1,4 @@
-AFRAME.registerComponent('show-text-on-hover', {
+AFRAME.registerComponent('change-color-on-hover', {
     schema: {
         text: {default: 'Hello world'}
     },
